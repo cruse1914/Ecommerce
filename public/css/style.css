@@ -1,0 +1,1032 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Montserrat";
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+* {box-sizing: border-box;}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(19, 30, 151, 1);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(19, 30, 151, 1);
+}
+.input-search[type=text]{
+width: 130px;
+-webkit-transition: width 0.4s ease-in-out;
+transition: width 0.4s ease-in-out;
+}
+.input-search[type=text]:focus{
+  width:50%;
+}
+/*---------------------------MAIN----*/
+.head{
+  margin-top: 5%;
+}
+.head-menu{
+  margin-left: 7%;
+}
+.head-menu a{
+  color: black;
+  margin-top: 10%;
+  padding: 0 10px;
+}
+.heading{
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 11%;
+  margin-bottom: 1%;
+}
+.heading1{
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+.headco{
+  margin-top: 3%;
+  margin-left: 32%;
+}
+.head-photo img{
+  width:100%;
+}
+.feature-box {
+  padding: 4.5%;
+  text-align: center;
+}
+.tech{
+  background-color: black;
+  margin-bottom: 0.3%;
+  color: white;
+}
+.tech1{
+  background-color: rgba(19, 30, 151, 1);
+  color:white;
+  text-align: center;
+}
+.wehave{
+  height: 50%;
+  background-color: black;
+  color: white;
+}
+.icon {
+  color: #ef8172;
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: #ff4c68;
+}
+.menu{
+margin-top: 20%;
+margin-left: 20%;
+width: 65%;
+text-align: center;
+}
+.menu1{
+margin-top: 10%;
+margin-left: 5%;
+width: 18%;
+text-align: center;
+}
+.menu2{
+margin-top: 10%;
+margin-left: 5%;
+width: 18%;
+text-align: center;
+}
+.menu3{
+margin-top: -16%;
+margin-left: 73%;
+width: 18%;
+text-align: center;
+}
+.menu1:hover, .menu2:hover, .menu3:hover img{
+  opacity: 0.8
+}
+.menu p{
+  color: grey;
+}
+.menu1 p{
+  color: grey;
+}
+.menu2 p{
+  color: grey;
+}
+.menu3 p{
+  color: grey;
+}
+.menu img{
+width: 90%;
+}
+.menu:hover img{
+opacity: 0.8;
+}
+.menu1 img{
+width: 90%;
+}
+.menu2 img{
+width: 90%;
+}
+.menu3 img{
+width: 90%;
+}
+.abc img{
+  margin-left: 2%;
+  margin-top: 1%;
+  margin-bottom: 0.3%;
+}
+.abc img:hover {
+  opacity: 0.8;
+}
+/*-----------------------------------Footer----------------------*/
+#footer{
+  background-color: black;
+  margin-bottom: -100%;
+}
+.we-are{
+  color: white;
+  margin-left: 2%;
+  margin-top: 5%;
+}
+.sub h6{
+  color: grey;
+}
+.option1{
+  margin-left: 70%;
+  margin-top: -28.5%;
+}
+.option2{
+  margin-left: 85%;
+  margin-top: -4%;
+}
+.option1 a{
+  color: grey;
+}
+.option1 a:hover{
+  color: white;
+}
+.option2 a{
+  color:grey;
+}
+.option2 a:hover{
+  color: white;
+}
+.sub{
+  margin-left: 2%;
+  margin-top: 2%;
+}
+.currency{
+  color: white;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+.pay-option h6{
+  color: white;
+}
+.pay-option{
+  margin-top: 10%;
+  margin-left: 70%;
+}
+.pay-option p{
+  margin-left: -80%;
+}
+.first-menu4{
+  margin-bottom: 3%;
+}
+
+/*------------------------------------ABOUT------------------------*/
+.we-dre{
+  text-align: center;
+  margin-top: 5%;
+}
+
+.our{
+  margin-left: 7%;
+  margin-bottom: 4%;
+}
+.we-h{
+  margin-top: 2%;
+}
+.we-have{
+  margin-left: -40%;
+}
+.we-have1{
+  margin-top: 3%;
+  text-align:center;
+}
+.we-ha{
+  text-align: center;
+}
+.we-have2{
+  margin-bottom: 1%;
+  margin-left: 1%;
+  text-align: center;
+}
+.we-have3{
+  margin-top: 1%;
+  margin-bottom: 4%;
+  text-align: center;
+}
+
+/*-------------------------------------------Men--------------------*/
+.size{
+  margin-left: 50%;
+  padding: 0 20px;
+}
+.size1{
+  margin-left: 130%;
+  margin-top: -40%;
+}
+.size2{
+  margin-left: 1500%;
+}
+.size3{
+  margin-left: 1630%;
+  margin-top: -80%;
+}
+.dropbtn {
+  background-color: white;;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.first-menu1{
+    margin-top: -6%;
+}
+.first-menu2{
+    margin-top: -5%;
+    margin-bottom: 5%;
+}
+.first-menu3{
+    margin-top: 5%;
+}
+
+/*---------------------------------------------------------------------Shoe----------------------------*/
+.img-zoom-container {
+  position: relative;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 40px;
+  height: 40px;
+}
+.img-zoom-result {
+  border: 1px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 600px;
+  height: 440px;
+  margin-left: 45%;
+  margin-top: -50%;
+  visibility: hidden;
+}
+#myimage:hover + .img-zoom-result{
+    visibility: visible;
+    position: absolute;
+}
+#myimage{
+  width: 600px;
+  height: 440px;
+  margin-left:20%;
+  margin-top:10%;
+}
+.feature-box1 {
+  padding: 4.5%;
+  text-align: center;
+  margin-left: 8%;
+}
+.feature-box2 {
+  padding: 4.5%;
+  text-align: center;
+  margin-left: -3%;
+}
+.belo-image{
+  margin-top:20%;
+}
+.belo-image img{
+  width:10%;
+}
+.s1:hover {
+  opacity: 0.9;
+}
+.s2:hover {
+  opacity: 0.9;
+}
+.s3:hover {
+  opacity: 0.9;
+}
+.s4:hover {
+  opacity: 0.9;
+}
+.s5:hover {
+  opacity: 0.9;
+}
+.s6:hover {
+  opacity: 0.9;
+}
+.s7:hover {
+  opacity: 0.9;
+}
+.s8:hover {
+  opacity: 0.9;
+}
+.s9:hover {
+  opacity: 0.9;
+}
+.con1{
+  margin-left: 0%;
+}
+#whyare{
+  margin-top: 10%;
+}
+#whyare img{
+  width:100%;
+}
+#whyare p{
+  color:rgba(19, 30, 151, 1);
+}
+.eter{
+  margin-left: 65%;
+  margin-top: -40%;
+}
+.eter1{
+  margin-left: 65%;
+  margin-top: -50%;
+}
+.available-color img{
+  width:20%;
+  padding: 0 15px;
+}
+.cho-size{
+  width: 80%;
+  font-size: 1.6vw;
+}
+.insta{
+  width:14.9%;
+  height: 272px;
+  margin-top: 0.2%;
+  margin-left: 0.2%;
+    transition: transform .2s;
+}
+#oo hr{
+  background-color: white;
+  height: 0.5%;
+  margin-top: -0.3%;
+}
+#oo1{
+  background-color: black;
+}
+.ooh4{
+  position: absolute;
+  border: 2px solid white;
+  border-spacing: 100%;
+  margin-top: -30%;
+  margin-left: 42%;
+  color: white;
+}
+.oo1{
+  margin-top: 6.8%;
+  margin-left: 7.5%;
+  position: absolute;
+}
+/* .insta1{
+  width:20%;
+  height:38.5%;
+  margin-top: 7%;
+  margin-left: 43.5%;
+  transition: transform .2s;
+} */
+.insta12{
+  width:28.5%;
+
+  margin-top: 7%;
+  margin-left: 35.3%;
+  transition: transform .2s;
+}
+.insta:hover{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.insta12:hover{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.insta2:hover{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.insta2{
+  width:40%;
+  height: 250px;
+  margin-top: 0.3%;
+  margin-left: 0.3%;
+    transition: transform .2s;
+}
+.oo2{
+  margin-top: -43%;
+  margin-left: 65.05%;
+  position: absolute;
+}
+#oo{
+  background-color: black;
+  height: 100%;
+}
+.accordion {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+.accordion1 {
+  background-color: white;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width:;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  position: absolute;
+}
+
+.active, .accordion1:hover {
+  background-color: #ccc;
+}
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+}
+.panel1 {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-top: 12%;
+  width: 100%;
+}
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+.accordion1:after {
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+
+.s1{
+  margin-left: ;
+  position: absolute;
+  width:100%;
+}
+.s1 p,.s2 p,.s3 p,.s4 p,.s5 p,.s6 p,.s7 p,.s8 p{
+  margin-top: 25%;
+}
+.s2{
+  margin-left: 10%;
+    position: absolute;
+  width:100%;
+}
+.s3{
+  position: absolute;
+  margin-left: 20%;
+    width:100%;
+}
+.s4{
+    position: absolute;
+  margin-left: 30%;
+    width:100%;
+}
+.s5{
+  margin-top:2%;
+    position: absolute;
+}
+.s6{
+  margin-top:2%;
+    position: absolute;
+  margin-left: 22%;
+}
+.s7{
+  margin-top:2%;
+    position: absolute;
+  margin-left: 30%;
+}
+.s8{
+  margin-top:2%;
+    position: absolute;
+    margin-left: 40%;
+}
+.s9{
+  margin-top:2%;
+    position: absolute;
+}
+.men{
+margin-top: 10%;
+margin-left: 10%;
+width: 18%;
+text-align: center;
+}
+.men1{
+margin-top: 10%;
+margin-left: 3%;
+width: 18%;
+text-align: center;
+}
+.men2{
+margin-top: 10%;
+margin-left: 3%;
+width: 18%;
+text-align: center;
+}
+.men3{
+margin-top: -42%;
+margin-left: 73%;
+width: 18%;
+text-align: center;
+}
+.men p{
+  color: grey;
+}
+.men1 p{
+  color: grey;
+}
+.men2 p{
+  color: grey;
+}
+.men3 p{
+  color: grey;
+}
+.men img{
+width: 90%;
+}
+.men1 img{
+width: 90%;
+}
+.men2 img{
+width: 90%;
+}
+.men3 img{
+width: 90%;
+}
+/*------------------------------------------------------CONTACT---------------------------------*/
+#con{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+#con h2{
+  margin-bottom: 3%;
+}
+#con p{
+  margin-bottom: 2%;
+}
+/*-------------------------------------------------------LOGIN------------------------------*/
+#logi{
+  text-align: center;
+}
+#logi h2{
+  margin-top: 3%;
+}
+/*---------------------------------------------------CART---------------*/
+#cart{
+  text-align: center;
+}
+#cart h2{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 8%;
+}
+#cart h4{
+  margin-bottom: 15%;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(19, 30, 151, 1); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*--------------------------------------------------------main1--------------------------------------*/
+.dropbtn {
+font-size: 16px;
+cursor: pointer;
+}
+
+.login1 a:hover{
+  color: rgba(19, 30, 151, 1);
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.show {display: block;}
+
+/*------Success---*/
+.hea{
+  margin-top: -35%;
+  margin-left: 3%;
+  color: white;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #1B2631;
+  margin-bottom: 31%;
+}
+
+/*----Failure----*/
+.hea1{
+  margin-top: -35%;
+  margin-left: 3%;
+  color: white;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #1B2631;
+  margin-bottom: 27%;
+}
+ @media (max-width: 1028px) {
+   .abc{
+     margin-bottom: -151%;
+   }
+   .mena{
+     position: absolute;
+     margin-left: 40%;
+     margin-top: 62%;
+   }
+   .womo img{
+     margin-left: -1%;
+     margin-top: 5.3%;
+   }
+   .menimg {
+     width:75%;
+   }
+   .womoimg {
+   width: 97.7%;
+   }
+   .tech{
+     margin-top: 151%;
+   }
+   .techh51{
+     margin-top: 1%;
+   }
+   .techh5{
+     margin-top: -3%;
+   }
+   .techelepro{
+     height: 30%;
+     margin-bottom: -26%;
+   }
+.option1{
+  margin-top:-25%;
+  margin-left: 68%;
+}
+.option2{
+  margin-top: -4%;
+}
+.menu1{
+  margin-left: 20%;
+  width:65%;
+}
+.menu2{
+  margin-left: 20%;
+  width:65%;
+}
+.menu3{
+  width:65%;
+margin-left: 20%;
+margin-top: 10%;
+}
+.menus2{
+  width:100%;
+  margin-left: 15%;
+}
+.menus3{
+  width:100%;
+  margin-left: 15%;
+}
+.img-zoom-container{
+  margin-left: -15%;
+}
+.img-zoom-container img{
+width:100%;
+}
+.img-zoom-result{
+  width: 100%;
+}
+#myresult{
+  height: 450px;
+opacity: 0;
+margin-left: -5%;
+margin-top: -78%;
+}
+.img-zoom-lens {
+opacity: 0;
+}
+.belo-image{
+  margin-top: 55%;
+  margin-left: %;
+}
+.belo-image img{
+  width:20%;
+}
+.s2{
+  margin-left: 25%;
+}
+.s3{
+  margin-left: 45%;
+}
+.s4{
+  margin-left: 65%;
+}
+.eter{
+  margin-top: 75%;
+  margin-left: 10%;
+}
+.eter1{
+  margin-top: 5%;
+  margin-left: 10%;
+}
+.cho-size1{
+  font-size: 3vw;
+}
+.wehave{
+  margin-bottom: 16%;
+}
+.wehave h1{
+  font-size: 6vw;
+}
+.wehaveh5{
+margin-left: -170%;
+margin-top: 50%;
+  margin-bottom: 30%;
+  background-color: black;
+}
+#oo1{
+  margin-top: -50%;
+}
+.oo2{
+  margin-top: -22%;
+}
+.ooh4{
+  font-size: 3vw;
+  margin-left: 40%;
+  margin-top: -20%;
+}
+.insta{
+  height: 106px;
+}
+.insta12{
+  margin-left: 35%;
+  height: 212px;
+}
+.insta2{
+  height: 106px;
+}
+.oo22 img{
+  height: 107px;
+}
+.ooh5{
+  margin-right: 10%;
+  margin-top: -3%;
+}
+#ato{
+margin-top: 20%;
+}
+.headco{
+  margin-left: 34%;
+}
+.headco1{
+  margin-left: 13%;
+}
+
+#ss73{
+width: 100%;
+}
+.techelepro1{
+  margin-bottom: 24%;
+}
+.s1s a{
+  margin-left: -10%;
+}
+.logoo{
+  margin-left: -13%;
+  width:48%;
+}
+.logiin label{
+margin-left: 5%;
+}
+.logiin1 label{
+margin-left: 9%;
+}
+.caimg {
+  position: absolute;
+  width:250%;
+  margin-left: -15%;
+}
+.cah4{
+  margin-left: 27%;
+  margin-top: 10%;
+}
+.badge{
+  position: absolute;
+  margin-top: -4%;
+  margin-left: -2%;
+}
+.cato strong{
+  margin-left: -150%;
+}
+.text a{
+  margin-left: -170%;
+}
+.adcard{
+  margin-top: 87%;
+  margin-left: -80%;
+  width:250%;
+}
+.adcard1{
+  font-size: 2vw;
+}
+.myo h3{
+  font-size: 2vw;
+}
+.myo h4{
+  font-size: 2vw;
+}
+.myo1 a{
+  background-color: transparent;
+  font-size: 2vw;
+}
+.myotota{
+    position: absolute;
+    padding-left: 13%;
+}
+.mydate{
+  position: absolute;
+  padding-left: 39%;
+}
+.adcard2{
+  background-color: transparent;
+  margin-left: -5%;
+  width:200%;
+}
+.myoqua{
+  position: absolute;
+  padding-top: -5%;
+  margin-left: 0%;
+}
+.myopri p{
+  position: absolute;
+  margin-top: -4%;
+  margin-left: 5%;
+}
+.myoordn{
+  margin-bottom: -5%;
+  padding-left: 5%;
+}
+.myoquan{
+  padding-left: 0%;
+}
+.we-have{
+  margin-left: 1%;
+}
+.hea{
+  margin-bottom: 20%;
+}
+.hea h1{
+  font-size: 5vw;
+}
+.hea1{
+  margin-bottom: 12%;
+}
+.hea1 h1{
+  font-size: 5vw;
+}
+.heading1{
+  margin-left: -70%;
+}
+}
+.myoid{
+  margin-left:13%;
+}
+/* Navigation Bar */
+
+.navbar {
+margin-top: 5%;
+margin-left: -5%;
+}
+.navbar-toggler{
+  background-color:rgba(19, 30, 151, 1);
+}
+.headco a{
+  color: rgba(19, 30, 151, 1);
+}
+.insta22{
+height: 295px;
+}
+
+.addtc{
+  transition: transform .2s;
+}
+
+.addtc:hover{
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}

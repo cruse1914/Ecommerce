@@ -1,0 +1,63 @@
+<%- include('partials/header') %>
+  <section class="row">
+    <div class="head-menu">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link1" href="/men">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/women">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/contact">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+    </div>
+  <div class="heading">
+    <h2><b>CRUSE</b>1914</h2>
+  </div>
+  <div class="headco">
+    <a href="/login"><i class="fas fa-user addtc"></i></a>
+    <a href="/cart"><i class="fa fa-shopping-cart addtc"></i></a>
+  </div>
+  </section>
+<section id="logi">
+  <h2>Register</h2>
+  <form action="/register" method="POST">
+          <div class="form-group logiin">
+  <label style="margin-top:2%;margin-right:36%;" for="email">Email</label><br />
+    <input class="btn btn-outline-dark" style="width:40%;margin-top:-0.5%;"  type="email" name="username"><br />
+  </div>
+    <div class="form-group logiin1">
+    <label style="margin-top:2%;margin-right:34%;" for="password">Password</label><br />
+    <input class="btn btn-outline-dark" style="width:40%;margin-top:-0.5%;"type="password" name="password"><br />
+    </div>
+      <br><button class="btn-lg btn-dark addtc" type="submit" name="button">REGISTER</button>
+      <br> <div class="col-sm-3 addtc" style="margin-left:37%;margin-top:1%;">
+          <a class="btn btn-block btn-social btn-google logoo" href="/auth/google" role="button">
+            <i class="fab fa-google"></i>
+            Sign Up with Google
+          </a>
+        </div>
+        <br><div class="addtc" style="margin-top:2%;margin-bottom:3%;"><a href="/login">Have already an account ?<b>Login Here</b></a></div>
+      <br />
+      </form>
+    </section>
+<%- include('partials/footer') %>

@@ -1,0 +1,50 @@
+[
+  {
+  "id": 1,
+  "name": "Materia Magnetic Rust",
+  "image": "s1.jpg",
+  "price": 750
+},
+{
+  "id": 2,
+  "name": "Atom Eternal 2.0 Black",
+  "image": "s2.jpg",
+  "price": 750
+},
+{
+  "id": 3,
+  "name": "Atom Eternal 2.0 Blue",
+  "image": "s3.webp",
+  "price": 750
+},
+{
+  "id": 4,
+  "name": "Atom Eternal 2.0 Grape",
+  "image": "s4.webp",
+  "price": 750
+},
+{
+  "id": 5,
+  "name": "Materia Magnetic Dark Grey",
+  "image": "s5.webp",
+  "price": 750
+},
+{
+  "id": 6,
+  "name": "Atom Dual Black",
+  "image": "s6.webp",
+  "price": 750
+},
+{
+  "id": 7,
+  "name": "Atom Dual Blue",
+  "image": "s7.webp",
+  "price": 750
+},
+{
+  "id": 8,
+  "name": "Atom Dual Grey",
+  "image": "s8.webp",
+  "price": 750
+}
+]

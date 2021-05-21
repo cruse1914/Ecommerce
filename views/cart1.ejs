@@ -1,0 +1,118 @@
+<%- include('partials/header') %>
+  <section class="row">
+    <div class="head-menu">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link1" href="/men1">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/women1">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/main1">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/about1">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/contact1">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+    </div>
+  <div class="heading">
+    <h2><b>CRUSE</b>1914</h2>
+  </div>
+  <div class="headco headco1">
+    <a onclick="myFunction()" class="dropbtn"><i class="fas fa-user addtc"></i></a>
+    <div id="myDropdown" class="dropdown-content">
+  <a href="/myorder" role="button">My Order</a>
+    <a href="/logout" role="button">Log out</a>
+  </div>
+    <a href="/cart1"><i class="fa fa-shopping-cart addtc"></i></a>
+    <% if(session.cart ){ %>
+      <span class="badge badge-light"> <%= session.cart.totalItems %> </span>
+      <% } %>
+  </div>
+</section>
+  <section id="cart">
+        <h2>Your cart</h2>
+
+  <% if(products) {%>
+      <div class="cart page">
+          <ul class="list-group">
+              <% products.forEach(function(data){ %>
+              <li class="list-group-item clearfix" style="background-color: ;">
+                  <div class="caimg">
+                    <img style="width:10%;margin-right:80%;" src="image/<%= data.item.image %>" alt="">
+                  </div>
+                  <div class="col-xs-5 cah4">
+                      <h4 style="margin-top:-5%; margin-right:40%;"><%= data.item.name %> </h4><br/>
+                  </div>
+                  <div class="col-xs-2" style="margin-top:-18%;position:absolute;margin-left:70%;">
+                    <% size.forEach(function(user){ %>
+                      <span class="badge">Size : <%= user.size %> </span>
+                        <% }) %>
+                  </div>
+                  <div class="col-xs-2 text-right" style="margin-top:-20%;">
+                      <span class="badge"><%= data.quantity %> </span>
+                  </div>
+
+                  <div class="col-xs-3 text-right">
+                    Rs <%= data.price %>
+                  </div>
+                  <div class="col-xs-2 text-right">
+                      <a href="/remove/<%= data.item.id %>" class="btn btn-primary addtc">Remove</a>
+                  </div>
+              </li>
+<% }) %>
+          </ul>
+      </div>
+      <div class="cato" style="margin-top:3%;margin-left:90%;">
+          <strong>Total: Rs <%= totalPrice %> </strong>
+      </div>
+      <hr><br><br>
+      <div class="text" style="margin-left:90%;">
+          <a href="/address" type="button" class="btn btn-success addtc">Continue</a>
+      </div><br><br>
+
+  <% } else {%>
+    <div style="margin-left:10%;">
+    <p>Your cart is currently empty.</p>
+    <a style="color:black;" href="/main1"><h4>CONTINUE SHOPPING --></h4></a>
+    </div>
+  <% } %>
+</section>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<%- include('partials/footer1') %>

@@ -1,0 +1,76 @@
+<%- include('partials/header') %>
+  <section class="row">
+    <div class="head-menu">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link1" href="/men1">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/women1">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/main1">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/about1">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/contact1">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+    </div>
+  <div class="heading">
+    <h2><b>CRUSE</b>1914</h2>
+  </div>
+  <div class="headco headco1">
+    <a onclick="myFunction()" class="dropbtn"><i class="fas fa-user addtc"></i></a>
+    <div id="myDropdown" class="dropdown-content">
+  <a href="/myorder" role="button">My Order</a>
+    <a href="/logout" role="button">Log out</a>
+  </div>
+    <a href="/cart1"><i class="fa fa-shopping-cart addtc"></i></a>
+    <% if(session.cart ){ %>
+      <span class="badge badge-light"> <%= session.cart.totalItems %> </span>
+      <% } %>
+  </div>
+  </section>
+<section id="con">
+    <h2>CONTACT</h2>
+    <p>If you have any question about us, our product or an order: <a href="mailto:userexperience@example.com">userexperience@example.com</a></p>
+    <p>If you're a journalist or a blogger and you want to receive more information or any marketing and communication matter:<br><a href="mailto:press@example.com">press@example.com</a></p>
+    <p>For distribution or sale of our products, please write to <a href="mailto:sales@example.com">sales@example.com</a></p>
+  </section>
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+<%- include('partials/footer1') %>

@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+<section class="row">
+  <div class="heading1">
+    <h2 style="margin-left:330%;"><b>CRUSE</b>1914</h2>
+  </div>
+</section>
+<section>
+  <div class="head-photo">
+    <img src="image/i1.jpg" alt="">
+  </div>
+<section class="adcard">
+  <div class="card" style="margin-left:32%;margin-top:-35%;margin-bottom:10%;width:40%;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);">
+  	<h3 style="text-align:center;margin-bottom:5%;"><b>Billing Address</b></h3>
+  <% if(usersWithSecrets.postal_code != null) {%>
+     <label style="margin-left:2%;" for="line1"><b>Address :</b></label>
+    <p style="margin-top:-6%;margin-left:23%;" class="secret-text"><%=usersWithSecrets.line1%></p><br />
+    <label style="margin-left:2%;margin-top:-5%;" for="city"><b>City :</b></label>
+<p style="margin-top:-6%;margin-left:23%;" class="secret-text"><%=usersWithSecrets.city%></p><br />
+<label style="margin-left:2%;margin-top:-5%;" for="state"><b>State :</b></label>
+<p style="margin-top:-6%;margin-left:23%;" class="secret-text"><%=usersWithSecrets.state%></p><br />
+<label style="margin-left:2%;margin-top:-5%;" for="postal_code"><b>Postal Code :</b></label>
+<p style="margin-top:-6%;margin-left:24%;" class="secret-text"><%=usersWithSecrets.postal_code%></p><br />
+<label style="margin-left:2%;margin-top:-5%;" for="ph_num"><b>Phone No :</b></label>
+<p style="margin-top:-6%;margin-left:24%;" class="secret-text"><%=usersWithSecrets.ph_num%></p><br />
+<a class="btn btn-outline-dark addtc" href="/choose" style="background-color:red;width:40%;color:white;margin-left:30%;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);" role="button">Continue For Payment </a><br />
+    <hr>
+      <a class="btn btn-dark btn-lg addtc" href="/submit" role="button">Add New Address</a>
+      <% } else {%>
+<a class="btn btn-dark btn-lg" href="/submit" role="button">Add New Address</a>
+<% } %>
+</div>
+</section>

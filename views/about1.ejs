@@ -1,0 +1,85 @@
+<%- include('partials/header') %>
+  <section class="row">
+    <div class="head-menu">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link1" href="/men1">Men</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/women1">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/main1">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/about1">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link1" href="/contact1">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+    </div>
+  <div class="heading">
+    <h2><b>CRUSE</b>1914</h2>
+  </div>
+  <div class="headco headco1">
+    <a onclick="myFunction()" class="dropbtn"><i class="fas fa-user addtc"></i></a>
+    <div id="myDropdown" class="dropdown-content">
+  <a href="/myorder" role="button">My Order</a>
+    <a href="/logout" role="button">Log out</a>
+  </div>
+    <a href="/cart1"><i class="fa fa-shopping-cart addtc"></i></a>
+    <% if(session.cart ){ %>
+      <span class="badge badge-light"> <%= session.cart.totalItems %> </span>
+      <% } %>
+  </div>
+  </section>
+<section class="about">
+  <div class="we-dre">
+  <h2 style="font-size:4vw;">We dress a generation of urban professionals,<br>creatives and innovators that need functional<br>yet modern products for their everyday lives.</h2>
+  <h2 class="we-h"><b>History</b></h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore<br />et dolore magna aliqua.</p>
+</div>
+  <h2 class="our"><b>Our values</b></h2>
+  <p class="we-ha">Balanced between functionality, aesthetics and minimalism with a less is more approach to design. Less is more. User-centric in all<br>design processes, experimentation, innovation, and future outlook. We manufacture in places with happy people with happy people in good working<br>conditions.</p>
+<h2 class="our"><b>We like<br>Some brand numbers so far</b></h2>
+<div class="we-have"><p class="we-have2">We have sold more than 250K pairs.</p>
+  <p class="we-have2">Customers in more than 51 countries are wearing us.</p>
+  <p class="we-have2">We sell in more than 300 shops all around the globe.</p>
+<p class="we-have1"><b>#CRUSE1914</b></p>
+<h6 class="we-have3">OUR MATRA. OUR GUIDE. WHERE WE ARE GOING.</h6>
+</div></section>
+
+  <script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+  </script>
+<%- include('partials/footer1') %>

@@ -1,0 +1,314 @@
+<%- include('partials/header') %>
+<section class="row">
+  <div class="head-menu">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link1" href="/men1">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link1" href="/women1">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link1" href="/main1">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link1" href="/about1">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link1" href="/contact1">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+  </div>
+<div class="heading">
+  <h2><b>CRUSE</b>1914</h2>
+</div>
+<div class="headco headco1">
+  <a onclick="myFunction()" class="dropbtn"><i class="fas fa-user addtc"></i></a>
+  <div id="myDropdown" class="dropdown-content">
+<a href="/myorder" role="button">My Order</a>
+  <a href="/logout" role="button">Log out</a>
+</div>
+  <a href="/cart1"><i class="fa fa-shopping-cart addtc"></i></a>
+  <% if(session.cart ){ %>
+    <span class="badge badge-light"> <%= session.cart.totalItems %> </span>
+    <% } %>
+</div>
+</section>
+<section id="">
+  <div class="img-zoom-container">
+  <img id="myimage" src="image/s32.jpg" alt="shoe" name="image" placeholder="Image" required>
+  <div id="myresult" class="img-zoom-result"></div>
+  </div>
+  <div class="belo-image">
+    <div class="container">
+    <div class="">
+    <a class="s1" href="/3"><img class="addtc" src="image/s3.webp" alt="" ></a>
+    <a class="s2" href="/32"><img class="addtc" src="image/s32.jpg" alt="" ></a>
+    <a class="s3" href="/33"><img class="addtc" src="image/s33.jpg" alt="" ></a>
+    <a class="s4" href="/34"><img class="addtc" src="image/s34.jpg" alt="" ></a>
+  </div>
+</div>
+</div>
+<div class="eter">
+<div class="">
+  <h4 name="name"><b><%= products3.name %></b></h4>
+  <h5 name="price" style="margin-bottom:5%;"><b>Rs <%= products3.price %></b></h5>
+  <p>Here is our best-seller, Atom Eternal. The<br>
+    perfect mix between the comfort and the<br>
+    technical qualities of the sneakers, with the<br>
+    elegant and formal touch of the shoe.</p>
+  <p>Its 2.0 version incorporates a lightweight <br>
+    and extremely comfortable two-color<br>
+    expanded EVA sole, with a slight re-<br>
+    dimensioning of the toe and heel that<br>
+  improve its support and cushioning.</p>
+  <p>The set is completed by its exterior fabric <br>
+    in different colors of elastane foam with<br>
+    interior foam, interior fabric in gray<br>
+    technical mesh, ergonomic insole and laces<br>
+  that match with the exterior.</p>
+</div>
+<br><br><br>
+<div class="available-color" style="margin-top:5%;">
+  <h5>Available colors</h5>
+  <div class="" style=""><a  href="/2"><img class="addtc" src="image/s2.jpg" alt=""></a><a href=""><img class="addtc" style="border-bottom:1px solid black;" src="image/s3.webp" alt=""></a><a href="/4"><img class="addtc" src="image/s4.webp" alt=""></a></div>
+</div><br><br><br>
+<div class="row" style="margin-top:5%;margin-left:1%;">
+  <h5>Size</h5><a href="css/ft-size.pdf" style="margin-left:45%;color:rgba(19, 30, 151, 1);">Size Chart</a>
+</div>
+<form action="/size2" method="POST">
+<select class="cho-size btn-light" name="size2" onchange='this.form.submit()'>
+      <option class="btn-light cho-size1" value="">Select Size</option>
+  <option class="btn-light cho-size1" value="7">7</option>
+  <option class="btn-light cho-size1" value="8">8</option>
+  <option class="btn-light cho-size1" value="9">9</option>
+  <option class="btn-light cho-size1" value="10">10</option>
+</select>
+  <noscript><input type="submit" value="Submit"></noscript>
+</form>
+ <a href="/add/<%= products3.id %>" class="btn addtc"  style="background-color:rgba(19, 30, 151, 1);color:white;margin-top:5%;text-align:center;width:80%;border-radius:0%;" role="button"><b>ADD TO CART<b></a>
+<br><hr>
+<a class="accordion btn">Description</a>
+<div class="panel">
+  <h6>Our iconic model, Atom. Our best seller. The<br />
+perfect mix to get the aesthetic and formal<br />
+look of a shoe with the comfort and technical<br />
+qualities of a sneaker.</h6>
+<h6>Exterior fabric made of dark blue expanded<br />
+foam, inner lining made of grey technical<br />
+mesh, ergonomic foam insole, blue / white<br />
+color polyurethane sole, blue laces.</h6>
+</div>
+
+<a class="accordion btn">Narrow Fit</a>
+<div class="panel">
+  <h6>This model fits a bit narrow on the instep, so<br />
+    we recommend you to choose a size larger<br />
+    than your usual size.</h6>
+</div>
+
+<a class="accordion btn">Cleaning</a>
+<div class="panel">
+  <h6>With a damp cloth, hand rub.</h6>
+</div>
+
+<a class="accordion btn">Why Its Worth</a>
+<div class="panel">
+  <h6>Why it's worth it's worth it: At CRUSE1914 we<br />
+    are committed to transparency: we want to<br />
+    tell you what it costs to manufacture our<br />
+    products, the margins we handle per unit and<br />
+    what other expenses we pay for each product<br />
+    we sell. See the full cost breakdown in our<br />
+    "why it's worth it" section.</h6>
+  </div></div>
+  </section>
+  <section id="whyare">
+    <h3 style="color:rgba(19, 30, 151, 1);margin-left:10%;"><b>Why are we different?</b></h3>
+    <div class="row">
+      <div class="feature-box1 col-2">
+      <img src="image/01.png" alt="">
+        <p><b>Advanced<br>technical<br>features</b></p>
+      </div>
+      <div class="feature-box2 col-2">
+      <img src="image/02.png" alt="">
+        <p><b>Minimalist<br>design</b></p>
+      </div>
+      <div class="feature-box2 col-2">
+            <img src="image/03.png" alt="">
+        <p><b>Affordable<br>prices</b></p>
+      </div>
+      <div class="feature-box2 col-2">
+            <img src="image/04.png" alt="">
+        <p><b>High Quality<br>Materials</b></p>
+      </div>
+      <div class="feature-box2 col-2">
+        <img src="image/05.png" alt="">
+        <p><b>Unisex design</b></p>
+      </div>
+      <div class="feature-box2 col-2">
+        <img src="image/06.png" alt="">
+        <p><b>Vegan<br>materials and<br>processes</b></p>
+      </div>
+    </div>
+    <div class="techelepro techelepro1">
+    <div style="background-color:rgba(19, 30, 151, 1);height:50%; margin-bottom: 0.3%;"><h4 style="margin-left:20%;text-align: center;font-size: 4.5vw;color:white;margin-top:5%;position:absolute;"><b>Technical and elegant products<br />for your daily life. Extreame comfort.<br />100% animal free.</b></h4></div>
+    </div>  </section>
+  <section id="oo1">
+  <div class="oo1"><div class="row"><img class="insta" src="image/i1.jpg" alt=""><img class="insta" src="image/i2.jpg" alt=""></div>
+  <div class="row"><img class="insta" src="image/i3.jpg" alt=""><img class="insta" src="image/i4.jpg" alt=""></div></div>
+  <img class="insta12" src="image/i5.jpg" alt="">
+  <div class="oo2"><div class="row"><img class="insta2" src="image/i6.jpg" alt=""><img  class="insta2" src="image/i7.jpg" alt=""></div>
+  <div class="row oo22"><img class="insta2 insta22" src="image/i8.jpg" alt=""><img  class="insta2 insta22" src="image/i9.jpg" alt=""></div></div>
+  <br />
+  <div class="row" style="margin-top:3%;"><h5 style="color:white;margin-left:5%">#cruse1914</h5><h5 class="ooh5" style="color:white;margin-left:78%"><u>Instashop</u></h5></div>
+  <br>
+  <h1 class="ooh4">INSTASHOP</h1>
+  </section>
+  <section id="">
+    <div class="row" style="margin-top:7%;">
+      <h3 style="margin-left:10%;"><b><u>Complete your look</u></b></h3><h3 style="margin-left:3%;color:grey;">You may also be interested in:</h3></div>
+    <div class="first-menu">
+    <div class="row">
+   <div class="menu1 addtc">
+     <a href="/4"><img src="image/s4.webp" alt="">
+     <h6 style="color:black;">Atom Eternal 2.0 Grape</h6>
+     <p>Rs 750</p></a>
+   </div>
+   <div class="menu1 addtc">
+     <a href="/5"><img src="image/s5.webp" alt="">
+     <h6 style="color:black;">Materia Magnetic Dark Grey</h6>
+     <p>Rs 750</p></a>
+   </div>
+   <div class="menu2 addtc">
+     <a href="/6"><img src="image/s6.webp" alt="">
+     <h6 style="color:black;">Atom Dual Black</h6>
+     <p>Rs 750</p></a>
+   </div>
+   <div class="menu3 addtc">
+     <a href="/7"><img src="image/s7.webp" alt="">
+     <h6 style="color:black;">Atom Dual Blue</h6>
+     <p>Rs 750</p></a>
+   </div>
+ </div>
+</div>
+<div class="s1s" style="color:black;margin-left:45%;margin-top:6%;margin-bottom:5%;"><a style="color:black;" href="/men1">BACK TO MEN</a></div>
+  </section>
+
+<script>
+function imageZoom(imgID, resultID) {
+  var img, lens, result, cx, cy;
+  img = document.getElementById(imgID);
+  result = document.getElementById(resultID);
+  /* Create lens: */
+  lens = document.createElement("DIV");
+  lens.setAttribute("class", "img-zoom-lens");
+  /* Insert lens: */
+  img.parentElement.insertBefore(lens, img);
+  /* Calculate the ratio between result DIV and lens: */
+  cx = result.offsetWidth / lens.offsetWidth;
+  cy = result.offsetHeight / lens.offsetHeight;
+  /* Set background properties for the result DIV */
+  result.style.backgroundImage = "url('" + img.src + "')";
+  result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+  /* Execute a function when someone moves the cursor over the image, or the lens: */
+  lens.addEventListener("mousemove", moveLens);
+  img.addEventListener("mousemove", moveLens);
+  /* And also for touch screens: */
+  lens.addEventListener("touchmove", moveLens);
+  img.addEventListener("touchmove", moveLens);
+  function moveLens(e) {
+    var pos, x, y;
+    /* Prevent any other actions that may occur when moving over the image */
+    e.preventDefault();
+    /* Get the cursor's x and y positions: */
+    pos = getCursorPos(e);
+    /* Calculate the position of the lens: */
+    x = pos.x - (lens.offsetWidth / 2);
+    y = pos.y - (lens.offsetHeight / 2);
+    /* Prevent the lens from being positioned outside the image: */
+    if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+    if (x < 0) {x = 0;}
+    if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+    if (y < 0) {y = 0;}
+    /* Set the position of the lens: */
+    lens.style.left = x + "px";
+    lens.style.top = y + "px";
+    /* Display what the lens "sees": */
+    result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /* Get the x and y positions of the image: */
+    a = img.getBoundingClientRect();
+    /* Calculate the cursor's x and y coordinates, relative to the image: */
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /* Consider any page scrolling: */
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}</script>
+<script>
+/* Execute the magnify function: */
+imageZoom("myimage", "myresult");
+imageZoom("myimage1", "myresult1");
+/* Specify the id of the image, and the strength of the magnifier glass: */
+</script>
+<!-- <script type="text/javascript">
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script> -->
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<%- include('partials/footer1') %>
